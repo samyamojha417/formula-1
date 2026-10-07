@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>APEX F1 | Formula 1 Archive 2000–2025</title>
+
+    <meta
+        name="description"
+        content="APEX F1 — A Formula 1 historical archive covering every season from 2000 to 2025."
+    >
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!--
+        ============================================================
+        APEX F1
+        Formula 1 Historical Archive — 2000 to 2025
+
+        Built and managed by Samyam Ojha.
+        Data architecture uses the Jolpica F1 API.
+        The archive is designed to be updated after each completed
+        Formula 1 season.
+
+        Theme:
+        YELLOW / WHITE / GREEN
+        ============================================================
+    -->
+
+    <header class="topbar">
+
+        <div class="logo" onclick="showHome()">
+            <span class="logo-apex">APEX</span>
+            <span class="logo-f1">F1</span>
+        </div>
+
+        <nav class="navigation">
+
+            <button onclick="showHome()" id="nav-home" class="nav-btn active">
+                HOME
+            </button>
+
+            <button onclick="showSeasons()" id="nav-seasons" class="nav-btn">
+                SEASONS
+            </button>
+
+            <button onclick="showDrivers()" id="nav-drivers" class="nav-btn">
+                DRIVERS
+            </button>
+
+            <button onclick="showRecords()" id="nav-records" class="nav-btn">
+                RECORDS
+            </button>
+
+            <button onclick="showRivalries()" id="nav-rivalries" class="nav-btn">
+                RIVALRIES
+            </button>
+
+            <button onclick="showMoments()" id="nav-moments" class="nav-btn">
+                MOMENTS
+            </button>
+
+            <button onclick="showDocumentation()" id="nav-documentation" class="nav-btn">
+                DOCUMENTATION
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <main id="app"></main>
+
+
+    <footer class="footer">
+
+        <div class="footer-inner">
+
+            <div>
+                <strong>APEX F1</strong>
+                <p>Formula 1 Historical Archive · 2000–2025</p>
+            </div>
+
+            <div class="footer-right">
+                <p>Built & managed by <strong>Samyam Ojha</strong></p>
+                <p>Archive updated after each completed season.</p>
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- Season modal -->
+    <div id="seasonModal" class="modal">
+
+        <div class="modal-content">
+
+            <button class="modal-close" onclick="closeModal()">×</button>
+
+            <div id="modalBody"></div>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
